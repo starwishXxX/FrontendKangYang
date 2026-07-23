@@ -1,0 +1,48 @@
+{
+	"FileVersion": 3,
+	"Version": 2,
+	"VersionName": "1.1",
+	"FriendlyName": "MetaShoot",
+	"Description": "UE Photo Studio Digital Twin and render interface. Open the MetaShoot window from Window/MetaShoot",
+	"Category": "VINZI",
+	"CreatedBy": "Jorge Valle Hurtado - VINZI",
+	"CreatedByURL": "https://www.vinzi.xyz/",
+	"DocsURL": "https://metashoot.vinzi.xyz/",
+	"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/7dc2c35fc61c468484c94bc41669e891",
+	"SupportURL": "https://discord.gg/tmME9CY9BB",
+	"EngineVersion": "5.1.0",
+	"CanContainContent": true,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "MetaShoot",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [
+				"Win64"
+			]
+		},
+		{
+			"Name": "MetaShootEditor",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit",
+			"PlatformAllowList": [
+				"Win64"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "MovieRenderPipeline",
+			"Enabled": true
+		},
+		{
+			"Name": "MoviePipelineMaskRenderPass",
+			"Enabled": true
+		},
+		{
+			"Name": "AppleProResMedia",
+			"Enabled": true
+		}
+	]
+}
